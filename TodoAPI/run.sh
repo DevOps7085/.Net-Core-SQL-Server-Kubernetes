@@ -1,0 +1,1 @@
+sed -i "s/latest/$1/1" _net-kubernetes-Docker container-CI/drop/todoapi.yaml
