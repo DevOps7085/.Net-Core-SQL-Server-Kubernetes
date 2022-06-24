@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: todoapi
-        image: mynetdockertest.azurecr.io/todoapi:latest.74
+        image: mynetdockertest.azurecr.io/todoapi:latest.75
         ports: 
         - containerPort: 80
         resources:
