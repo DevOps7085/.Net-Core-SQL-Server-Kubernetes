@@ -72,10 +72,4 @@ steps:
     publishLocation: 'Container'
 
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Microsoft Partner Network(03fb1c1b-27ec-410b-b2bd-2d94ffe228a7)'
-    appType: 'webAppLinux'
-    appName: 'demoyamlnet'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     
