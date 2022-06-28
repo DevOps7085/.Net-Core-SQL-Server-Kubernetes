@@ -71,11 +71,10 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: AzureRmWebAppDeployment@4
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'Microsoft Partner Network(03fb1c1b-27ec-410b-b2bd-2d94ffe228a7)'
     appType: 'webAppLinux'
-    WebAppName: 'demoyamlnet'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    RuntimeStack: 'DOTNETCORE|6.0'
+    appName: 'demoyamlnet'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'DOTNETCORE|6.0'
